@@ -44,7 +44,7 @@ async function inquirydelete(req,res) {
         const data = await MyModel.findByIdAndDelete(req.body) 
         res.status(200).json({
             status: "seccess",
-            message: "data find",
+            message: "data daleted",
             data
         })
     } catch (err) {

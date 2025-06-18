@@ -45,10 +45,10 @@ async function serviceplandelete(req,res) {
 
 
     try {
-        const data = await MyModel2.findByIdAndDelete() 
+        const data = await MyModel2.findByIdAndDelete(req.body) 
         res.status(200).json({
             status: "seccess",
-            message: "data find",
+            message: "data deleted",
             data
         })
     } catch (err) {
