@@ -6,7 +6,7 @@ const route = express.Router();
 
 route.post("/servicebook",servicebook)
 route.get("/servicebookget",servicebookget)
-route.delete("/servicebookdelete",servicebookdelete)
+route.post("/servicebookdelete",servicebookdelete)
 
  
 

@@ -5,6 +5,7 @@ var cors = require('cors');
 const route = require("./routes/inquiry")
 const router = require("./routes/servicebook")
 const bookplan = require("./routes/serviceplan")
+const mail = require("./routes/mail")
 connect();
 app.use(express.json());
 const path = require('path');
@@ -30,6 +31,13 @@ app.use("/", cors(({
     origin: '*', // frontend origin
     credentials: true
 })), bookplan)
+app.use("/", cors(({
+    origin: '*', // frontend origin
+    credentials: true
+})), mail)
+
+
+// app.use(cors())
 
 
 app.listen("5000") 

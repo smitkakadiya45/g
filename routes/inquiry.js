@@ -6,7 +6,7 @@ const route = express.Router();
 
 route.post("/inquiry",inquiry)
 route.get("/inquiryget",inquiryget)
-route.delete("/inquirydelete",inquirydelete)
+route.post("/inquirydelete",inquirydelete)
 
  
 
